@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    android:backgroundTint="#f7f6f6"
+    tools:context="com.geekbounty.realtimeassettracking.authentication.LoginActivity">
+
+    <ImageView
+        android:id="@+id/topImage"
+        android:src="@drawable/toplogo"
+        android:layout_width="match_parent"
+        android:layout_height="130px" />
+
+    <EditText
+        android:id="@+id/lgEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/topImage"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="13dp"/>
+    <EditText
+        android:id="@+id/lgPass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lgEmail"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#899af9"
+        android:layout_below="@id/lgPass"
+        android:textColor="#fcfcfc"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:elevation="4dp"
+        android:text="Login to Track Phone"/>
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="No account yet? Create one"
+        android:onClick="onSignUpHandler"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_below="@id/signupText"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

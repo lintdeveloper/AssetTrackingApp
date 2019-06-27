@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1004932173026",
+    "firebase_url": "https://realtimeassettracking.firebaseio.com",
+    "project_id": "realtimeassettracking",
+    "storage_bucket": "realtimeassettracking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004932173026:android:c34d43bc3f44ccf3",
+        "android_client_info": {
+          "package_name": "com.geekbounty.realtimeassettracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004932173026-f66fu3bm7jvvr2rkkk8m43evkk2pkg5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geekbounty.realtimeassettracking",
+            "certificate_hash": "8d42222265da137b96c980f5d6b82524606369e9"
+          }
+        },
+        {
+          "client_id": "1004932173026-q4jnmpc8umq1b3j57r1slcja2e19k6g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANMMk0uExEy6AGq2XW2V3tHuZezpXaAHQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004932173026-q4jnmpc8umq1b3j57r1slcja2e19k6g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

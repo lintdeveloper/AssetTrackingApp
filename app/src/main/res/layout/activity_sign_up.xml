@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg"
+    android:backgroundTint="#f7f6f6"
+    tools:context="com.geekbounty.realtimeassettracking.authentication.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/topImage"
+        android:src="@drawable/toplogo"
+        android:layout_width="match_parent"
+        android:layout_height="130px" />
+
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/topImage"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="13dp" />
+
+    <EditText
+        android:id="@+id/userPass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/userEmail"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Create Account"
+        android:background="#899af9"
+        android:layout_below="@id/userPass"
+        android:textColor="#fcfcfc"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="onSigninHandler"
+        android:text="Already with an account? Sign in"
+        android:textSize="18sp"
+        android:layout_below="@id/signupBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/signupText"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    tools:context="com.geekbounty.realtimeassettracking.PhoneNumberActivity">
+
+
+    <ImageView
+        android:id="@+id/topImage"
+        android:src="@drawable/toplogo"
+        android:layout_width="wrap_content"
+        android:layout_height="130px"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Phone Tracker"
+        android:textColor="#fa0a12"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Input Your Phone Number"
+        android:textColor="#5f2abf"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/userPhoneNumber"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Start background Tracking"
+        android:padding="7dp"
+        android:textColor="#fff"
+        android:elevation="8dp"
+        android:background="@color/colorPrimary"
+        android:onClick="startTrackingHandler"/>
+</LinearLayout>
